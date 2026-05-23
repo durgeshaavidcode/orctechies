@@ -1,0 +1,57 @@
+{
+  "name": "oratechies",
+  "version": "1.0.0",
+  "description": "An enterprise-grade, multi-tenant B2B2C job marketplace and applicant tracking ecosystem designed to bridge job seekers and corporate recruiters through structured data processing and high-volume search metrics.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf node_modules build coverage package-lock.json && npm cache clean --force",
+    "lint": "eslint ./",
+    "lint-staged": "lint-staged",
+    "prettier": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/durgeshaavidcode/orctechies.git"
+  },
+  "keywords": [
+    "job",
+    "marketplace",
+    "application",
+    "tracking",
+    "resume",
+    "bridge",
+    "job"
+  ],
+  "author": "durgeshaavidcode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/durgeshaavidcode/orctechies/issues"
+  },
+  "homepage": "https://github.com/durgeshaavidcode/orctechies#readme",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.12.0",
+    "axios": "^1.16.1",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "husky": "^9.1.7"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,html,css,json}": [
+      "yalc check",
+      "prettier --write",
+      "eslint ./",
+      "npm run test:coverage"
+    ]
+  }
+}
