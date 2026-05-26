@@ -2,20 +2,14 @@
 
 # dependencies
 /node_modules
-**/node_modules/
 /.pnp
 .pnp.js
 
 # testing
 /coverage
-**/coverage/
 
 # production
 /build
-**/build/
-
-/dist
-**/dist/
 
 # misc
 .DS_Store
@@ -33,7 +27,4 @@ yalc.lock
 
 .env
 .env.*
-**/.env
-**/.env.*
-
 

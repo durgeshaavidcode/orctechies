@@ -1,0 +1,6 @@
+# Ignore artifacts:
+build
+coverage
+cd
+README.md
+*.yaml
