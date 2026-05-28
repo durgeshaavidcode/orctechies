@@ -60,7 +60,8 @@ export default defineConfig({
 		cors: true, // Allow micro-frontends to bypass cross-origin blocks
 	},
 	build: {
-		target: 'esnext',
+		target: ['es2020', 'edge88', 'firefox78', 'chrome87', 'safari14'],
+    	cssTarget: 'safari14',
 		minify: false,
 	},
 });

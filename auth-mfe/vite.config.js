@@ -27,7 +27,8 @@ export default defineConfig({
     cors: true
   },
   build: {
-    target: 'esnext',
+    target: ['es2020', 'edge88', 'firefox78', 'chrome87', 'safari14'],
+    cssTarget: 'safari14',
     minify: false,
   }
 });
