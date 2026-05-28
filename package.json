@@ -22,8 +22,7 @@
     "preview:host": "vite preview host-app --port 5000",
     "preview:auth": "vite preview auth-mfe --port 5001",
     "preview:admin": "vite preview admin-mfe --port 5002",
-    "preview": "concurrently \"npm:preview:host\" \"npm:preview:auth\" \"npm:preview:admin\"",
-    "prepare": "husky install"
+    "preview": "concurrently \"npm:preview:host\" \"npm:preview:auth\" \"npm:preview:admin\""
   },
   "repository": {
     "type": "git",
