@@ -12,7 +12,7 @@ export default defineConfig({
       exposes: {
         './Auth': './src/index.jsx',
       },
-      shared: ['react', 'react-dom'],
+      shared: ['react', 'react-dom', 'react-router-dom', '@originjs/vite-plugin-federation'],
     }),
   ],
   server: {

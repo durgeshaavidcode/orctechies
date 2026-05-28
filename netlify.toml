@@ -1,0 +1,24 @@
+# Netlify configuration file for monorepo deployment
+# Main app: host-app
+
+[build]
+  base = "host-app"
+  publish = "host-app/dist"
+  command = "npm install --prefix ../shared-component && npm install --prefix ../admin-mfe && npm install --prefix ../auth-mfe && npm install && npm run build"
+
+# Redirect all requests to index.html for SPA
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Set environment variables if needed
+#[[context.production.environment]]
+#  NODE_ENV = "production"
+
+# Add more configuration as needed for functions, headers, etc.

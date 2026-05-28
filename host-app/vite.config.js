@@ -21,7 +21,7 @@ export default defineConfig({
 					from: 'vite',
 				},
 			},
-			shared: ['react', 'react-dom', 'react-router-dom'],
+			shared: ['react', 'react-dom', 'react-router-dom', '@originjs/vite-plugin-federation'],
 		}),
 		{
 			name: 'force-cors',
