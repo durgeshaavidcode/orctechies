@@ -4,7 +4,7 @@
 [build]
   base = "host-app"
   publish = "host-app/dist"
-  command = "npm install --prefix ./shared-component && npm install --prefix ./admin-mfe && npm install --prefix ./auth-mfe && npm install && npm run build"
+  command = "npm install --prefix ../shared-component && npm install --prefix ../admin-mfe && npm install --prefix ../auth-mfe && npm install && npm run build"
 
 # Redirect all requests to index.html for SPA
 [[redirects]]
