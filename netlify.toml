@@ -1,3 +1,15 @@
+# Proxy micro-frontend remote entries and assets to local dev servers
+[[redirects]]
+  from = "/auth-mfe/*"
+  to = "http://localhost:5001/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/admin-mfe/*"
+  to = "http://localhost:5002/:splat"
+  status = 200
+  force = true
 # Netlify configuration file for monorepo deployment
 
 
