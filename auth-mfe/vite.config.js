@@ -10,7 +10,7 @@ export default defineConfig({
       name: 'auth_mfe',
       filename: 'remoteEntry.js',
       exposes: {
-        './Auth': './src/index.jsx',
+        './Auth': './src/Auth.jsx',
       },
       shared: ['react', 'react-dom', 'react-router-dom'],
     }),
